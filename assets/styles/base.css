@@ -2,45 +2,38 @@
 @import './_base.css';
 @import './_animations.css';
 
-
-/* Base Layer */
-@import './_base.css';
-@import './_animations.css';
-
 /* ============================================
-   终极背景覆盖（穿透所有容器）
+   终极背景覆盖（精准点名版）
    ============================================ */
 
-/* 1. 强制让 html 和 body 都透明，并加上测试图 */
+/* 1. 强制让网页底层加上背景图 */
 html, body {
   background-color: transparent !important;
-  background-image: url('/bg.jpg') !important; 
+  background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2000&auto=format&fit=crop') !important; 
   background-size: cover !important;          
   background-position: center !important;     
   background-attachment: fixed !important;    
   background-repeat: no-repeat !important;    
 }
 
-/* 2. 把 MeNav 的主容器全部变透明 */
-.layout, 
-#app, 
-.main-content, 
-.content-wrapper,
-.page-container {
+/* 2. 精准点名右侧主容器，扒掉它的黑衣服！ */
+main.content {
   background-color: transparent !important; 
   background: none !important;
 }
 
-/* 3. 给侧边栏和内容区加半透明毛玻璃（非常重要，否则背景太亮看不清字） */
-.sidebar {
-  background-color: rgba(20, 20, 20, 0.7) !important; /* 深色半透明 */
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px);
+/* 3. 顺带把外层大容器也变透明 */
+.layout, 
+#app {
+  background-color: transparent !important; 
 }
 
-/* 给站点卡片也加一点毛玻璃 */
-.site-card {
-  background-color: rgba(255, 255, 255, 0.05) !important; /* 微微发亮 */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+/* 4. 给左侧边栏（nav.sidebar）和所有卡片（site-card）穿上半透明的毛玻璃 */
+nav.sidebar,
+.site-card,
+.dashboard-card {
+  background-color: rgba(20, 20, 20, 0.6) !important; 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
