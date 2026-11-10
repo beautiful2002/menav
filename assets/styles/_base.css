@@ -311,7 +311,7 @@ html.no-js .menu-toggle {
    ============================================ */
 body {
   /* 替换为你自己的图片地址，如果是放在 public 文件夹下的 bg.jpg，就写 /bg.jpg */
-  background-image: url('/bg.jpg') !important; 
+  background-image: url('../bg.jpg') !important; 
   background-size: cover !important;          /* 铺满全屏 */
   background-position: center !important;     /* 居中显示 */
   background-attachment: fixed !important;    /* 滑动页面时背景固定不动 */
