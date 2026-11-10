@@ -1,251 +1,355 @@
-# 默认页面配置（请勿直接修改）。
-# 建议复制到 config/user/pages/bookmarks.yml 并按需调整。
-# 说明：该页面通常由“书签导入工具”自动生成，手工修改时请保持字段结构一致。
-title: 书签
-subtitle: bookmarks
+# 自动生成的书签配置文件
+# 若要更新，请将新的书签HTML文件放入bookmarks/目录
+# 此文件使用模块化配置格式，位于config/user/pages/目录下
 
-# 指定使用的内置页面类型（由 Astro 组件渲染）
-# 提示：bookmarks 页面标题区会自动显示“内容更新：YYYY-MM-DD（git|mtime）”，无需额外配置
+title: 我的书签
+subtitle: 从浏览器导入的书签收藏
 template: bookmarks
-
 categories:
-  - name: '常用网站'
-    icon: 'fas fa-star'
+  - name: 根目录书签
+    icon: fas fa-star
+    path:
+      - 根目录书签
     sites:
-      - name: 'GitHub'
-        url: 'https://github.com/'
-        icon: 'fab fa-github'
-        description: '代码托管平台'
-      - name: 'Stack Overflow'
-        url: 'https://stackoverflow.com/'
-        icon: 'fab fa-stack-overflow'
-        description: '程序员问答社区'
-      - name: 'MDN Web Docs'
-        url: 'https://developer.mozilla.org/'
-        icon: 'fas fa-book'
-        description: 'Web开发文档'
-
-  - name: '社交媒体'
-    icon: 'fas fa-share-alt'
-    groups:
-      - name: '国际平台'
-        icon: 'fas fa-globe'
-        sites:
-          - name: 'Twitter'
-            url: 'https://twitter.com/'
-            icon: 'fab fa-twitter'
-            description: '微博客社交平台'
-          - name: 'LinkedIn'
-            url: 'https://www.linkedin.com/'
-            icon: 'fab fa-linkedin'
-            description: '职业社交网络'
-          - name: 'Facebook'
-            url: 'https://www.facebook.com/'
-            icon: 'fab fa-facebook'
-            description: '社交网络服务'
-      - name: '国内平台'
-        icon: 'fas fa-map-marker-alt'
-        sites:
-          - name: '微博'
-            url: 'https://weibo.com/'
-            icon: 'fas fa-comment'
-            description: '中文社交媒体平台'
-          - name: '知乎'
-            url: 'https://www.zhihu.com/'
-            icon: 'fas fa-question-circle'
-            description: '中文问答社区'
-          - name: 'B站'
-            url: 'https://www.bilibili.com/'
-            icon: 'fas fa-video'
-            description: '弹幕视频网站'
-
-  - name: '技术资源'
-    icon: 'fas fa-laptop-code'
-    subcategories:
-      - name: '前端开发'
-        icon: 'fas fa-code'
-        groups:
-          - name: '框架库'
-            icon: 'fas fa-cube'
-            sites:
-              - name: 'React'
-                url: 'https://reactjs.org/'
-                icon: 'fab fa-react'
-                description: 'React官方文档'
-              - name: 'Vue.js'
-                url: 'https://vuejs.org/'
-                icon: 'fab fa-vuejs'
-                description: 'Vue.js官方文档'
-              - name: 'Angular'
-                url: 'https://angular.io/'
-                icon: 'fab fa-angular'
-                description: 'Angular官方文档'
-          - name: '状态管理'
-            icon: 'fas fa-database'
-            sites:
-              - name: 'Redux'
-                url: 'https://redux.js.org/'
-                icon: 'fas fa-database'
-                description: 'Redux状态管理'
-              - name: 'Vuex'
-                url: 'https://vuex.vuejs.org/'
-                icon: 'fas fa-database'
-                description: 'Vue状态管理'
-              - name: 'MobX'
-                url: 'https://mobx.js.org/'
-                icon: 'fas fa-react'
-                description: '响应式状态管理'
-          - name: '构建工具'
-            icon: 'fas fa-tools'
-            sites:
-              - name: 'Webpack'
-                url: 'https://webpack.js.org/'
-                icon: 'fas fa-cube'
-                description: '模块打包工具'
-              - name: 'Vite'
-                url: 'https://vitejs.dev/'
-                icon: 'fas fa-bolt'
-                description: '下一代前端构建工具'
-              - name: 'Rollup'
-                url: 'https://rollupjs.org/'
-                icon: 'fas fa-compress'
-                description: '模块打包器'
-      - name: '后端开发'
-        icon: 'fas fa-server'
-        groups:
-          - name: 'Node.js生态'
-            icon: 'fab fa-node-js'
-            sites:
-              - name: 'Express'
-                url: 'https://expressjs.com/'
-                icon: 'fas fa-server'
-                description: 'Node.js Web框架'
-              - name: 'Koa'
-                url: 'https://koajs.com/'
-                icon: 'fas fa-leaf'
-                forceIconMode: manual
-                description: '下一代Node.js框架'
-              - name: 'NestJS'
-                url: 'https://nestjs.com/'
-                icon: 'fas fa-home'
-                description: 'Node.js企业级框架'
-          - name: 'Python框架'
-            icon: 'fab fa-python'
-            sites:
-              - name: 'Django'
-                url: 'https://www.djangoproject.com/'
-                icon: 'fab fa-python'
-                description: 'Python Web框架'
-              - name: 'Flask'
-                url: 'https://flask.palletsprojects.com/'
-                icon: 'fas fa-flask'
-                description: 'Python微框架'
-              - name: 'FastAPI'
-                url: 'https://fastapi.tiangolo.com/'
-                icon: 'fas fa-bolt'
-                description: '现代Python Web框架'
-
-  - name: '设计资源'
-    icon: 'fas fa-palette'
-    subcategories:
-      - name: 'UI设计工具'
-        icon: 'fas fa-paint-brush'
-        groups:
-          - name: '原型设计'
-            icon: 'fas fa-drafting-compass'
-            sites:
-              - name: 'Figma'
-                url: 'https://www.figma.com/'
-                icon: 'fab fa-figma'
-                description: '协作式UI设计工具'
-              - name: 'Sketch'
-                url: 'https://www.sketch.com/'
-                icon: 'fab fa-sketch'
-                description: 'Mac平台UI设计工具'
-              - name: 'Adobe XD'
-                url: 'https://www.adobe.com/products/xd.html'
-                icon: 'fab fa-adobe'
-                description: 'Adobe UI设计工具'
-          - name: '设计系统'
-            icon: 'fas fa-th-large'
-            sites:
-              - name: 'Ant Design'
-                url: 'https://ant.design/'
-                icon: 'fas fa-th'
-                forceIconMode: manual
-                description: '企业级UI设计语言'
-              - name: 'Material Design'
-                url: 'https://material.io/design'
-                icon: 'fas fa-cube'
-                description: 'Google设计系统'
-              - name: 'Bootstrap'
-                url: 'https://getbootstrap.com/'
-                icon: 'fab fa-bootstrap'
-                description: '响应式CSS框架'
-      - name: '视觉资源'
-        icon: 'fas fa-image'
-        groups:
-          - name: '图标库'
-            icon: 'fas fa-icons'
-            sites:
-              - name: 'Font Awesome'
-                url: 'https://fontawesome.com/'
-                icon: 'fab fa-font-awesome'
-                description: '图标库'
-              - name: 'Iconfont'
-                url: 'https://www.iconfont.cn/'
-                icon: 'fas fa-icons'
-                description: '阿里巴巴图标库'
-              - name: 'Feather Icons'
-                url: 'https://feathericons.com/'
-                icon: 'fas fa-feather'
-                description: '简洁的图标库'
-          - name: '配色方案'
-            icon: 'fas fa-palette'
-            sites:
-              - name: 'Coolors'
-                url: 'https://coolors.co/'
-                icon: 'fas fa-palette'
-                description: '在线配色方案生成器'
-              - name: 'Adobe Color'
-                url: 'https://color.adobe.com/'
-                icon: 'fab fa-adobe'
-                description: 'Adobe配色工具'
-              - name: 'Paletton'
-                url: 'https://paletton.com/'
-                icon: 'fas fa-palette'
-                description: '配色方案设计工具'
-
-  - name: '开发工具'
-    icon: 'fas fa-tools'
-    groups:
-      - name: '代码编辑器'
-        icon: 'fas fa-code'
-        sites:
-          - name: 'Visual Studio Code'
-            url: 'https://code.visualstudio.com/'
-            icon: 'fas fa-code'
-            description: '微软代码编辑器'
-          - name: 'Sublime Text'
-            url: 'https://www.sublimetext.com/'
-            icon: 'fas fa-file-code'
-            description: '轻量级代码编辑器'
-          - name: 'WebStorm'
-            url: 'https://www.jetbrains.com/webstorm/'
-            icon: 'fab fa-js'
-            description: 'JetBrains前端IDE'
-      - name: '版本控制'
-        icon: 'fas fa-code-branch'
-        sites:
-          - name: 'GitHub'
-            url: 'https://github.com/'
-            icon: 'fab fa-github'
-            description: '代码托管平台'
-          - name: 'GitLab'
-            url: 'https://gitlab.com/'
-            icon: 'fab fa-gitlab'
-            description: 'Git代码管理平台'
-          - name: 'Bitbucket'
-            url: 'https://bitbucket.org/'
-            icon: 'fab fa-bitbucket'
-            description: 'Atlassian代码托管'
+      - name: WeTab 新标签页
+        url: https://zjgsuzjx.github.io/acg/
+        icon: fab fa-github
+        description: ''
+  - name: 网络
+    icon: fas fa-folder
+    path:
+      - 网络
+    sites:
+      - name: 文叔叔 - 传文件，找文叔叔（大文件、永不限速）
+        url: https://www.wenshushu.cn/drive/
+        icon: fas fa-link
+        description: ''
+      - name: 百度网盘获取Cookie工具.rar - 蓝奏云
+        url: https://www.lanzous.com/i8n0pwd
+        icon: fas fa-link
+        description: ''
+      - name: PanDownload
+        url: http://pandownload.com/
+        icon: fas fa-link
+        description: ''
+      - name: 腾讯哈勃分析系统
+        url: https://habo.qq.com/
+        icon: fas fa-link
+        description: ''
+      - name: IDM绿化破解版 - 不死鸟 - 分享为王
+        url: https://hao.su/2486/
+        icon: fas fa-link
+        description: ''
+      - name: hodown.zip - 蓝奏云
+        url: https://www.lanzoux.com/i1Mx1efnubi
+        icon: fas fa-link
+        description: ''
+      - name: 分区   DiskGenius_Pro_v5.2.1.941
+        url: https://mysoullzy.lanzous.com/b00znc9je
+        icon: fas fa-link
+        description: ''
+      - name: 百度网盘—下载利器
+        url: https://thunderbird.lanzous.com/b01bdspaj
+        icon: fas fa-link
+        description: ''
+      - name: DuPan.exe - 蓝奏云网盘
+        url: https://yhw17.lanzous.com/idGyOeilrgb
+        icon: fas fa-link
+        description: ''
+      - name: 东凛全集 | 每日福利
+        url: https://xn--kcrx49b0jelsq.xyz/%e4%b8%9c%e5%87%9b%e5%85%a8%e9%9b%86#more-965
+        icon: fas fa-link
+        description: ''
+      - name: 海量PhotoShop笔刷素材免费下载！PS笔刷吧
+        url: https://brushes8.com/
+        icon: fas fa-link
+        description: ''
+      - name: 音乐标签pc版 - vinlxc - 博客园
+        url: https://www.cnblogs.com/vinlxc/p/11347744.html
+        icon: fas fa-link
+        description: ''
+      - name: eunx99       [pc] 单机游戏   pcstory V4.5.zip - 蓝奏云网盘
+        url: https://one6.lanzoui.com/iADFVfhw91e
+        icon: fas fa-link
+        description: ''
+      - name: 【微信公众号：ONE6】IDM V6.38.6安装版.zip - 蓝奏云
+        url: https://pan.lanzoui.com/iJtpLhgzn5g
+        icon: fas fa-link
+        description: ''
+      - name: 缺dll
+        url: https://cn.dll-files.com/
+        icon: fas fa-link
+        description: ''
+      - name: V2rayN 4.12配置教程 - V2ray XTLS黑科技
+        url: https://v2xtls.org/v2rayn-4-12%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/
+        icon: fas fa-link
+        description: ''
+      - name: bdys.me
+        url: https://www.bdys.me/
+        icon: fas fa-link
+        description: ''
+  - name: fanqiang
+    icon: fas fa-folder
+    path:
+      - fanqiang
+    sites:
+      - name: Masaru0422 - 頻道頁面 - XVIDEOS.COM
+        url: https://www.xvideos.com/channels/masaru0422
+        icon: fas fa-link
+        description: ''
+      - name: "'japanese old japan porn hnd' 搜索 - XNXX.COM"
+        url: https://www.xnxx.com/search/japanese+old+japan+porn+hnd
+        icon: fas fa-link
+        description: ''
+      - name: Vidéos porno gratuites et films de tubes de sexe sur xHamster
+        url: https://fr.xhamster19.com/
+        icon: fas fa-link
+        description: ''
+  - name: 加速
+    icon: fas fa-folder
+    path:
+      - 加速
+    sites:
+      - name: M系镜像 - 首页
+        url: https://mirror.chromaso.net/#login
+        icon: fas fa-link
+        description: ''
+  - name: 工具
+    icon: fas fa-folder
+    path:
+      - 工具
+    sites:
+      - name: Google Translate － 谷歌翻译
+        url: http://translate.google.cn/?hl=en#auto/zh-CN/
+        icon: fas fa-link
+        description: ''
+      - name: IP地址查询 - 本机的 ip
+        url: http://www.ip138.com/
+        icon: fas fa-link
+        description: ''
+      - name: IP地址查询 - 代理的 ip【全局代理】
+        url: http://ipcheck.bannedbook.org/
+        icon: fas fa-link
+        description: ''
+      - name: Speedtest.net - 网速测试
+        url: http://www.speedtest.net/
+        icon: fas fa-link
+        description: ''
+      - name: VirusTotal - 多引擎在线病毒扫描网
+        url: https://www.virustotal.com/zh-cn/
+        icon: fas fa-link
+        description: ''
+      - name: HD Wallpapers - 高清壁纸
+        url: http://www.wallpaperfx.com/
+        icon: fas fa-link
+        description: ''
+      - name: IPv6 test
+        url: http://ipv6-test.com/
+        icon: fas fa-link
+        description: ''
+      - name: IPv6 测试
+        url: http://test-ipv6.com/
+        icon: fas fa-link
+        description: ''
+      - name: Google 短网址
+        url: http://goo.gl/
+        icon: fas fa-link
+        description: ''
+      - name: 论坛转帖工具 - 禁书网
+        url: http://www.bannedbook.org/zt/
+        icon: fas fa-link
+        description: ''
+  - name: 搜索
+    icon: fas fa-folder
+    path:
+      - 搜索
+    sites:
+      - name: 维基百科，自由的百科全书
+        url: http://zh.wikipedia.org/
+        icon: fab fa-wikipedia-w
+        description: ''
+      - name: DuckDuckGo【匿名搜索引擎】
+        url: https://duckduckgo.com/
+        icon: fas fa-link
+        description: ''
+      - name: Torrentz【种子搜索】
+        url: http://torrentz.eu/
+        icon: fas fa-link
+        description: ''
+  - name: 呵
+    icon: fas fa-folder
+    path:
+      - 呵
+    sites:
+      - name: ACG盒子 - 专注ACG的导航盒子
+        url: https://www.acgbox.link/
+        icon: fas fa-link
+        description: ''
+      - name: ACG喵导航 - 专注ACG的喵喵喵导航_ACG导航网站
+        url: https://www.miaoaaa.com/
+        icon: fas fa-link
+        description: ''
+      - name: ACG二次元导航 | 二次元爱好者必备的导航网站 | 萌导航网
+        url: https://www.rrnav.com/erciyuan
+        icon: fas fa-link
+        description: ''
+      - name: 首页 - 飞雪ACG论坛
+        url: https://fxacg.cc/plugin.php?id=comiis_app_portal&pid=7&mobile=2
+        icon: fas fa-link
+        description: ''
+      - name: 次元猫导航 | 二次元网站分享喵
+        url: https://miaodh.net/
+        icon: fas fa-link
+        description: ''
+      - name: 琉璃神社 ★ HACG.me | 最新的ACG资讯 分享同人动漫的快乐
+        url: https://www.hacg.me/wp/
+        icon: fas fa-link
+        description: ''
+      - name: 视觉小说论坛-视觉小说版块-游戏-Thvse免费资源站
+        url: https://thvsefr.com/forum/50.html
+        icon: fas fa-link
+        description: ''
+      - name: Thvse免费资源站
+        url: https://thvsefr.com/
+        icon: fas fa-link
+        description: ''
+      - name: FENGSKY导航页
+        url: https://fengsky.tokyo/
+        icon: fas fa-link
+        description: ''
+      - name: 白鹭学园 | ACG社区
+        url: https://srsg.moe/#term-2
+        icon: fas fa-link
+        description: ''
+      - name: 初音的青葱网发布页
+        url: https://xygalgame.com/
+        icon: fas fa-link
+        description: ''
+      - name: 『澄空学园』 GalGame专题网
+        url: https://bbs.sumisora.net/
+        icon: fas fa-link
+        description: ''
+      - name: HGgard - 北紳の庭 ♢绅士们的二次元资源分享交流平台♢
+        url: http://hggard.com/
+        icon: fas fa-link
+        description: ''
+      - name: 3D アダルト・美少女 ゲーム メーカー イリュージョン
+        url: http://www.illusion.jp/
+        icon: fas fa-link
+        description: ''
+      - name: 门户 - 手机版 - Powered by Discuz!
+        url: https://www.cunhua.pics/portal.php?mod=index&mobile=2
+        icon: fas fa-link
+        description: ''
+      - name: 【新提醒】单机游戏_单机游戏下载_3DMGAME_中国单机游戏论坛 - Powered by Discuz!
+        url: https://bbs.3dmgame.com/forum.php
+        icon: fas fa-link
+        description: ''
+      - name: 游戏-白夜新次元
+        url: https://www.baibaix.cn/forum-1.htm
+        icon: fas fa-link
+        description: ''
+      - name: 天使二次元讨论区 - ts2t.com
+        url: https://ts2t.com/forum.php
+        icon: fas fa-link
+        description: ''
+      - name: 里番 - acgbuster
+        url: https://acgbuster.moe/category/%e5%8a%a8%e6%bc%ab/%e9%87%8c%e7%95%aa-%e5%8a%a8%e6%bc%ab
+        icon: fas fa-link
+        description: ''
+      - name: Hanime1.me - H動漫/裏番/線上看
+        url: https://hanimeone.me/
+        icon: fas fa-link
+        description: ''
+      - name: 'nhentai: hentai doujinshi and manga'
+        url: https://nhentai.net/
+        icon: fas fa-link
+        description: ''
+      - name: 真红小站
+        url: https://dev.shinnku.us/
+        icon: fas fa-link
+        description: ''
+      - name: illusion中国,illusion中文汉化,i社游戏,家族崩坏,illusion官网,Playhome家族崩坏,性感沙滩4,Honey Select,人工学园2,3D定制女仆,人工少女3,AI少女
+        url: https://lspfls.top/
+        icon: fas fa-link
+        description: ''
+      - name: hui站发布页
+        url: https://huihuicn.org/
+        icon: fas fa-link
+        description: ''
+      - name: iDomino - Domino,slot
+        url: https://www.iidomi.com/
+        icon: fas fa-link
+        description: ''
+      - name: 风花雪月
+        url: https://fhxy-a.top/
+        icon: fas fa-link
+        description: ''
+      - name: ACGMOMO - 一站式游戏文化社区!
+        url: https://acgmomo.com/
+        icon: fas fa-link
+        description: ''
+      - name: TouchGal - 一站式Galgame文化社区!
+        url: https://www.touchgal.ink/
+        icon: fas fa-link
+        description: ''
+      - name: nJAV | 免费高清在线看
+        url: https://www.njavtv.art/dm247/cn
+        icon: fas fa-link
+        description: ''
+      - name: 首页
+        url: https://www.moyu.moe/
+        icon: fas fa-link
+        description: ''
+      - name: 伊莉討論區
+        url: https://www52.eyny.com/index.php
+        icon: fas fa-link
+        description: ''
+      - name: ASMR Online
+        url: https://asmr-100.com/works
+        icon: fas fa-link
+        description: ''
+      - name: Galgame 补丁排行 - 鲲 Galgame 补丁
+        url: https://www.moyu.moe/ranking/patch
+        icon: fas fa-link
+        description: ''
+      - name: 免费在线观看 | GetAV
+        url: https://getav.net/zh
+        icon: fas fa-link
+        description: ''
+      - name: ComicSparks · GitHub
+        url: https://github.com/ComicSparks/
+        icon: fab fa-github
+        description: ''
+      - name: 萌玩ACG~玩转萌系
+        url: https://www.mplay38.cc/
+        icon: fas fa-link
+        description: ''
+      - name: 漫画动漫-春日ACG
+        url: https://cracg.com/category/manhua
+        icon: fas fa-link
+        description: ''
+      - name: 一糖导航丨实用的上网导航资源网址导航
+        url: https://iitang.com/
+        icon: fas fa-link
+        description: ''
+      - name: 莉可POI - 你身边的二次元导航姬 - 及时收录动漫网站及资讯、宅网站、萌网站、动画、漫画、游戏等内容。让您获得更加简单快捷的二次元体验！
+        url: https://s.lycopoi.club/
+        icon: fas fa-link
+        description: ''
+      - name: 首页 - 珍惜世间的每一天~ -
+        url: https://9527acgmuhou.com/forum.php
+        icon: fas fa-link
+        description: ''
+      - name: ACG喵导航 - 汇总二次元ACGN网址导航
+        url: https://a.tkacg.com/
+        icon: fas fa-link
+        description: ''
+      - name: 【新提醒】樱花萌 - 二次元资源分享网
+        url: https://jiuyh.com/
+        icon: fas fa-link
+        description: ''
+      - name: CnGal
+        url: https://www.cngal.org/
+        icon: fas fa-link
+        description: ''
