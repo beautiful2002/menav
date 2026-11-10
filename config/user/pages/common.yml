@@ -20,18 +20,26 @@ categories:
         url: https://yuanbao.tencent.com/chat/naQivTmsDa
         icon: fab fa-yuanbao
         description: 元宝
-      - name: Linux.do # 站点名称
-        url: https://linux.do/ # http/https URL（favicon 模式将尝试加载站点图标）
-        icon: fab fa-linux # 手动图标：manual 模式使用；favicon 模式下作为回退
-        description: 新的理想型社区 # 站点描述
+      - name: Kimi 深度研究
+        url: https://www.kimi.com/researcher
+        icon: fas fa-flask
+        description: 自主完成规划与报告生成的深度研究 Agent[reference:0]
+      - name: 夸克网盘
+        url: https://pan.quark.cn/list#/list/all
+        icon: fas fa-cloud
+        description: 云存储与文件备份
+      - name: 百度网盘
+        url: http://pan.baidu.com/disk/home#from=share_pan_logo
+        icon: fas fa-cloud
+        description: 个人云存储与多端同步
+      - name: GitHub
+        url: https://github.com/
+        icon: fab fa-github
+        description: 代码托管与协作平台
       - name: Google
         url: https://www.google.com
         icon: fab fa-google
         description: 全球最大的搜索引擎
-      - name: GitHub
-        url: https://www.github.com
-        icon: fab fa-github
-        description: 代码托管平台
       - name: Stack Overflow
         url: https://stackoverflow.com
         icon: fab fa-stack-overflow
@@ -52,13 +60,21 @@ categories:
         url: https://www.reddit.com
         icon: fab fa-reddit
         description: 社区讨论平台
-  - name: 学习资源
+  - name: 视频
     icon: fas fa-graduation-cap
     sites:
       - name: 哔哩哔哩
         url: https://www.bilibili.com
         icon: fas fa-play-circle
         description: 视频学习平台
+      - name: MuteFun TV
+        url: https://www.mutefun.tv/
+        icon: fas fa-tv
+        description: MuteFun 动漫
+      - name: MuteFun CC
+        url: https://www.mutefun.cc/
+        icon: fas fa-play-circle
+        description: MuteFun 动漫
       - name: 掘金
         url: https://juejin.cn
         icon: fas fa-book
