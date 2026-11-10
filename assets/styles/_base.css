@@ -305,3 +305,15 @@ html.no-js .menu-toggle {
   opacity: 1;
   visibility: visible;
 }
+
+/* ============================================
+   自定义背景配置 (加在文件最底部)
+   ============================================ */
+body {
+  /* 替换为你自己的图片地址，如果是放在 public 文件夹下的 bg.jpg，就写 /bg.jpg */
+  background-image: url('/bg.jpg') !important; 
+  background-size: cover !important;          /* 铺满全屏 */
+  background-position: center !important;     /* 居中显示 */
+  background-attachment: fixed !important;    /* 滑动页面时背景固定不动 */
+  background-repeat: no-repeat !important;    /* 背景图不重复 */
+}
