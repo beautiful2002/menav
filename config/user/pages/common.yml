@@ -15,11 +15,11 @@ categories:
       - name: deepseek
         url: https://chat.deepseek.com/
         icon: fab fa-deepseek
-        description: 
+        description: deepseek
       - name: 元宝
         url: https://yuanbao.tencent.com/chat/naQivTmsDa
         icon: fab fa-yuanbao
-        description:
+        description: 元宝
       - name: Linux.do # 站点名称
         url: https://linux.do/ # http/https URL（favicon 模式将尝试加载站点图标）
         icon: fab fa-linux # 手动图标：manual 模式使用；favicon 模式下作为回退
