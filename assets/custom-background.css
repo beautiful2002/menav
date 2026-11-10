@@ -1,0 +1,7 @@
+body {
+  background-image: url('/assets/bg.jpg') !important;
+  background-size: cover !important;        /* 覆盖全屏 */
+  background-position: center !important;    /* 居中 */
+  background-repeat: no-repeat !important;   /* 不重复 */
+  background-attachment: fixed !important;   /* 滚动时背景固定 */
+}
