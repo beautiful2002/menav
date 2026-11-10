@@ -306,14 +306,3 @@ html.no-js .menu-toggle {
   visibility: visible;
 }
 
-/* ============================================
-   自定义背景配置 (加在文件最底部)
-   ============================================ */
-body {
-  /* 这里换成了一张网上的测试风景图链接 */
-  background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2000&auto=format&fit=crop') !important; 
-  background-size: cover !important;          
-  background-position: center !important;     
-  background-attachment: fixed !important;    
-  background-repeat: no-repeat !important;    
-}
