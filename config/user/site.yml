@@ -128,3 +128,5 @@ navigation:
   - name: 关于
     icon: fas fa-file-alt
     id: content
+  # 背景图片引用
+  custom_css: /assets/custom-background.css
