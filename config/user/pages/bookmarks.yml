@@ -28,10 +28,6 @@ categories:
         url: https://www.lanzous.com/i8n0pwd
         icon: fas fa-link
         description: ''
-      - name: PanDownload
-        url: http://pandownload.com/
-        icon: fas fa-link
-        description: ''
       - name: 腾讯哈勃分析系统
         url: https://habo.qq.com/
         icon: fas fa-link
@@ -40,24 +36,8 @@ categories:
         url: https://hao.su/2486/
         icon: fas fa-link
         description: ''
-      - name: hodown.zip - 蓝奏云
-        url: https://www.lanzoux.com/i1Mx1efnubi
-        icon: fas fa-link
-        description: ''
       - name: 分区   DiskGenius_Pro_v5.2.1.941
         url: https://mysoullzy.lanzous.com/b00znc9je
-        icon: fas fa-link
-        description: ''
-      - name: 百度网盘—下载利器
-        url: https://thunderbird.lanzous.com/b01bdspaj
-        icon: fas fa-link
-        description: ''
-      - name: DuPan.exe - 蓝奏云网盘
-        url: https://yhw17.lanzous.com/idGyOeilrgb
-        icon: fas fa-link
-        description: ''
-      - name: 东凛全集 | 每日福利
-        url: https://xn--kcrx49b0jelsq.xyz/%e4%b8%9c%e5%87%9b%e5%85%a8%e9%9b%86#more-965
         icon: fas fa-link
         description: ''
       - name: 海量PhotoShop笔刷素材免费下载！PS笔刷吧
@@ -66,10 +46,6 @@ categories:
         description: ''
       - name: 音乐标签pc版 - vinlxc - 博客园
         url: https://www.cnblogs.com/vinlxc/p/11347744.html
-        icon: fas fa-link
-        description: ''
-      - name: eunx99       [pc] 单机游戏   pcstory V4.5.zip - 蓝奏云网盘
-        url: https://one6.lanzoui.com/iADFVfhw91e
         icon: fas fa-link
         description: ''
       - name: 【微信公众号：ONE6】IDM V6.38.6安装版.zip - 蓝奏云
@@ -82,10 +58,6 @@ categories:
         description: ''
       - name: V2rayN 4.12配置教程 - V2ray XTLS黑科技
         url: https://v2xtls.org/v2rayn-4-12%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/
-        icon: fas fa-link
-        description: ''
-      - name: bdys.me
-        url: https://www.bdys.me/
         icon: fas fa-link
         description: ''
   - name: fanqiang
