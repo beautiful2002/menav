@@ -7,7 +7,7 @@
 /* 1. 底层背景 */
 html, body {
   background-color: transparent !important;
-  background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2000&auto=format&fit=crop') !important; 
+  background-image: url('/bg.jpg') !important; 
   background-size: cover !important;          
   background-position: center !important;     
   background-attachment: fixed !important;    
