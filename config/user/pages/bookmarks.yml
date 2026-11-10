@@ -60,24 +60,7 @@ categories:
         url: https://v2xtls.org/v2rayn-4-12%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/
         icon: fas fa-link
         description: ''
-  - name: fanqiang
-    icon: fas fa-folder
-    path:
-      - fanqiang
-    sites:
-      - name: Masaru0422 - 頻道頁面 - XVIDEOS.COM
-        url: https://www.xvideos.com/channels/masaru0422
-        icon: fas fa-link
-        description: ''
-      - name: "'japanese old japan porn hnd' 搜索 - XNXX.COM"
-        url: https://www.xnxx.com/search/japanese+old+japan+porn+hnd
-        icon: fas fa-link
-        description: ''
-      - name: Vidéos porno gratuites et films de tubes de sexe sur xHamster
-        url: https://fr.xhamster19.com/
-        icon: fas fa-link
-        description: ''
-  - name: 加速
+ - name: 加速
     icon: fas fa-folder
     path:
       - 加速
@@ -323,5 +306,22 @@ categories:
         description: ''
       - name: CnGal
         url: https://www.cngal.org/
+        icon: fas fa-link
+        description: ''
+  - name: 翻墙
+    icon: fas fa-folder
+    path:
+      - 翻墙
+    sites:
+      - name: Masaru0422 - 頻道頁面 - XVIDEOS.COM
+        url: https://www.xvideos.com/channels/masaru0422
+        icon: fas fa-link
+        description: ''
+      - name: "'japanese old japan porn hnd' 搜索 - XNXX.COM"
+        url: https://www.xnxx.com/search/japanese+old+japan+porn+hnd
+        icon: fas fa-link
+        description: ''
+      - name: Vidéos porno gratuites et films de tubes de sexe sur xHamster
+        url: https://fr.xhamster19.com/
         icon: fas fa-link
         description: ''
