@@ -24,7 +24,7 @@ categories:
         icon: fab fa-github
         description: 一个强大的浏览器扩展，用于智能管理、整理和安全备份您的书签数据
         url: 'https://github.com/beautiful2002/marksvault-backups'
-        - name: KGM-AUTO-CHECKIN
+      - name: KGM-AUTO-CHECKIN
         icon: fab fa-github
         description: 酷狗概念版VIP自动签到
         url: 'https://github.com/beautiful2002/KGM-AUTO-CHECKIN'
