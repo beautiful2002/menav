@@ -83,6 +83,25 @@ categories:
         url: https://leetcode.cn
         icon: fas fa-code
         description: 算法刷题平台
+  - name: 邮箱
+    icon: fas fa-envelope # 邮箱分类图标
+    sites:
+      - name: QQ邮箱
+        url: https://mail.qq.com
+        icon: fab fa-qq
+        description: 腾讯旗下邮箱服务
+      - name: 网易邮箱
+        url: https://mail.163.com
+        icon: fas fa-envelope-open-text
+        description: 网易旗下邮箱服务
+      - name: Gmail
+        url: https://mail.google.com
+        icon: fab fa-google
+        description: Google 提供的邮箱
+      - name: Outlook
+        url: https://outlook.live.com
+        icon: fab fa-microsoft
+        description: 微软出品的邮箱
   - name: 设计资源
     icon: fas fa-palette
     sites:
