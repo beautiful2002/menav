@@ -60,7 +60,7 @@ categories:
         url: https://v2xtls.org/v2rayn-4-12%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/
         icon: fas fa-link
         description: ''
- - name: 加速
+  - name: 加速
     icon: fas fa-folder
     path:
       - 加速
@@ -98,20 +98,8 @@ categories:
         url: http://www.wallpaperfx.com/
         icon: fas fa-link
         description: ''
-      - name: IPv6 test
-        url: http://ipv6-test.com/
-        icon: fas fa-link
-        description: ''
       - name: IPv6 测试
         url: http://test-ipv6.com/
-        icon: fas fa-link
-        description: ''
-      - name: Google 短网址
-        url: http://goo.gl/
-        icon: fas fa-link
-        description: ''
-      - name: 论坛转帖工具 - 禁书网
-        url: http://www.bannedbook.org/zt/
         icon: fas fa-link
         description: ''
   - name: 搜索
@@ -308,10 +296,10 @@ categories:
         url: https://www.cngal.org/
         icon: fas fa-link
         description: ''
-  - name: 翻墙
+  - name: 哼
     icon: fas fa-folder
     path:
-      - 翻墙
+      - 哼
     sites:
       - name: Masaru0422 - 頻道頁面 - XVIDEOS.COM
         url: https://www.xvideos.com/channels/masaru0422
