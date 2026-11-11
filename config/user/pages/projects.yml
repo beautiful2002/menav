@@ -18,7 +18,7 @@ categories:
     sites:
       - name: MeNav
         icon: fab fa-github # 手动图标（manual 模式显示；favicon 模式下作为回退）
-        description: 一键部署的个人导航站生成器，支持书签导入与自动构建，轻松整理展示您的网络收藏 # 站点描述
+        description: 个人导航站生成器，支持书签导入与自动构建，轻松整理展示网络收藏 # 站点描述
         url: https://github.com/beautiful2002/menav
       - name: MarksVault
         icon: fab fa-github
@@ -35,3 +35,15 @@ categories:
         icon: fab fa-github
         description: Wrap Gemini CLI, Antigravity, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API
         url: 'https://github.com/router-for-me/CLIProxyAPI'
+      - name: Kazumi
+        icon: fab fa-github
+        description: 基于自定义规则的番剧采集APP，支持流媒体在线观看，支持弹幕，支持实时超分辨率。
+        url: 'https://github.com/Predidit/Kazumi'
+      - name: edgetunnel
+        icon: fab fa-github
+        description: 基于 Cloudflare Workers/Pages 的 VLESS/Trojan 代理脚本，用于搭建网络节点。
+        url: 'https://github.com/cmliu/edgetunnel'
+      - name: azurlan
+        icon: fab fa-github
+        description: 碧蓝航线自动脚本。
+        url: 'https://github.com/JMBQ01/azurlan'
